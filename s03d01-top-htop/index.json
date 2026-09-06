@@ -1,0 +1,45 @@
+{
+  "title": "top e htop: Ler a Carga Antes de Agir",
+  "description": "Seu dedo já está digitando sudo systemctl restart app-service . O que você faz antes disso?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Leia o load average dos três períodos antes de fazer qualquer coisa.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Instale e abra o htop, se ainda não tiver.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Ordene a lista por %CPU e identifique o processo no topo.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Gere uma carga de teste e observe o processo aparecer no topo do htop.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Encerre o processo de teste e documente PID, %CPU, %MEM e load average antes/depois.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

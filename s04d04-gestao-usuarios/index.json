@@ -1,0 +1,55 @@
+{
+  "title": "Gestão de Usuários: useradd, usermod e o Perigo do -G",
+  "description": "Seu dedo está perto de digitar usermod -G suporte novo_user . O que esse comando faz de diferente do que parece?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie os três grupos de teste que o laboratório vai usar, antes de tentar adicionar o usuário a eles.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Crie um usuário de teste com home e shell corretos, e defina uma senha.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Adicione o usuário a dois grupos diferentes, um de cada vez, sempre com -aG.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Reproduza deliberadamente o erro: rode -G sem -a e veja os outros grupos sumirem.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Corrija o erro, restaurando os grupos perdidos com -aG.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Documente usuário criado, grupos adicionados, erro cometido e corrigido, validação final.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "7. Remova o usuário de teste e os três grupos, deixando o servidor como estava antes da aula.",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

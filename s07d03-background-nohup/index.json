@@ -1,0 +1,45 @@
+{
+  "title": "Jobs em Background: &, nohup, disown",
+  "description": "Jobs em Background: &, nohup, disown",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. crie um script de teste que roda por alguns minutos, imprimindo progresso.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. inicie o script com nohup e disown, redirecionando a saída pra um log.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. feche a sessão SSH de propósito (ou simule com exit) e reconecte.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. confirme com ps -p que o processo sobreviveu, e acompanhe o log pra ver o progresso.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente comando usado, teste de desconexão realizado, resultado confirmado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

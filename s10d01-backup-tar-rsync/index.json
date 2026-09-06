@@ -1,0 +1,45 @@
+{
+  "title": "Backup Automatizado: tar + rsync com Verificação",
+  "description": "Backup Automatizado: tar + rsync com Verificação",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. escreva um script de backup simples com tar, sem nenhuma verificação de erro ainda.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. adicione || com registro de erro e exit 1 depois do tar.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. simule uma falha apontando o tar pra uma origem que não existe, e confirme que o script para com a mensagem correta.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. corrija a simulação e confirme que o script completa com sucesso, registrando cada etapa no log.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente cenário de falha testado, cenário de sucesso testado, conteúdo do log final.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

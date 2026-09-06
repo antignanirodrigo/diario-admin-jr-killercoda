@@ -1,0 +1,45 @@
+{
+  "title": "Funções: Reuso Sem Repetir Código",
+  "description": "Funções: Reuso Sem Repetir Código",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. escreva um script com um bloco de lógica repetido duas vezes, com pequena variação — reproduza a duplicação da histór",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. refatore criando uma função que recebe o que varia como argumento.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. teste a função com um argumento que tenha espaço, confirmando que as aspas protegem corretamente.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. adicione uma terceira chamada da mesma função, confirmando que o reuso funciona sem duplicar código.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente função criada, argumentos usados, resultado das três chamadas.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

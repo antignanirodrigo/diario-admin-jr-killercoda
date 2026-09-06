@@ -1,0 +1,45 @@
+{
+  "title": "dmesg: Quando o Kernel Fala",
+  "description": "O app não registrou nada. Onde mais você procura antes de dizer que \"não tem explicação\"?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Leia os eventos mais recentes do kernel, mesmo sem incidente nenhum.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Filtre só eventos de erro e aviso, cortando ruído informativo.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Pesquise o significado de uma mensagem de dmesg que você não reconheça.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Pratique correlacionar horários entre dmesg e o log de uma aplicação de teste.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente um relatório de incidente completo.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

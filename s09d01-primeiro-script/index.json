@@ -1,0 +1,45 @@
+{
+  "title": "Primeiro Script: Shebang, Variáveis, chmod +x",
+  "description": "Primeiro Script: Shebang, Variáveis, chmod +x",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. crie um script sem shebang, com uma variável e um teste [[ ]], e tente rodar direto.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. dê permissão de execução e compare ./script.sh com bash script.sh.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione o shebang como primeira linha e confirme que ./script.sh agora funciona de forma consistente.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. adicione mais uma variável e confirme que ela é interpolada corretamente.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente shebang usado, permissão aplicada, teste de execução, resultado consistente.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

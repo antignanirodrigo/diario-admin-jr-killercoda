@@ -1,0 +1,45 @@
+{
+  "title": "sed: Alterar Texto Sem Estragar",
+  "description": "sed: Alterar Texto Sem Estragar",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. crie um arquivo de teste com uma palavra repetida, inclusive duas vezes na mesma linha.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. rode sed sem -i pra ver a prévia da substituição, sem alterar o arquivo.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. aplique de verdade com -i.bak e confirme que o backup foi criado.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. compare o backup com o arquivo modificado, confirmando exatamente o que mudou.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. teste a diferença entre sed com e sem /g, na linha com múltiplas ocorrências.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

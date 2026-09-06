@@ -1,0 +1,45 @@
+{
+  "title": "Healthcheck: Não Perder Falhas",
+  "description": "Healthcheck: Não Perder Falhas",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. escreva um script com três checks fictícios, sem contador ainda, e force o primeiro a falhar — reproduza o bug da his",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. adicione um contador de falhas e repita o teste com a mesma falha no primeiro check.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. teste com a falha no segundo e no terceiro check também, confirmando que o contador funciona em qualquer posição.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. teste também o caso onde todos os checks passam, confirmando que exit 0 continua funcionando corretamente.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente cenários testados (falha em cada posição, tudo OK), exit codes obtidos em cada um.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

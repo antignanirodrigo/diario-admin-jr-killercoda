@@ -1,0 +1,45 @@
+{
+  "title": "sar: O Histórico Que o top Nunca Mostrou",
+  "description": "O top só mostra o agora. Pra investigar ontem, o que precisa ter sido feito ANTES?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Instale o sysstat e confirme que a coleta está ativa.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Espere a coleta acumular dados e consulte o histórico de CPU sem filtro de horário.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Veja outros tipos de histórico disponíveis além de CPU.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Gere uma carga de teste e confirme que o pico ficou registrado no histórico.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente janela de tempo, métrica investigada, valor do pico e causa correlacionada.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

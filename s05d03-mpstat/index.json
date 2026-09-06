@@ -1,0 +1,45 @@
+{
+  "title": "mpstat: Um Núcleo Gritando Sozinho",
+  "description": "mpstat: Um Núcleo Gritando Sozinho",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Confirme quantos núcleos a VM tem e o uso individual de cada um.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Gere uma carga single-thread e observe qual núcleo ela satura.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Identifique o PID e o núcleo exato do processo de teste.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Encerre o processo de teste e confirme o retorno ao normal.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente sintoma, média enganosa, núcleo real e processo responsável.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Espaço em Disco e Processos",
+  "description": "O plantão é seu. O que você digita primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie o problema antes de resolvê-lo — o alerta do chamado precisa existir na SUA máquina, senão você lê sobre incêndi",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Meça o disco e identifique qual sistema de arquivos está mais cheio.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Meça 3 pastas diferentes e compare os tamanhos pra achar a responsável.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Compare a lista de processos parada com a lista ao vivo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Escreva um relatório separando claramente \"problema de disco\" de \"problema de memória\".",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Confirme que nenhum processo foi finalizado e nenhum arquivo foi apagado durante o laboratório.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "7. Desmonte o cenário que você criou no primeiro passo e prove que o disco voltou ao estado original.",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

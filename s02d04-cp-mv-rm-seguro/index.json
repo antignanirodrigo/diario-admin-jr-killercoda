@@ -1,0 +1,45 @@
+{
+  "title": "cp, mv, rm com Segurança + tar/gzip",
+  "description": "Seu dedo já está perto do Enter em cima de rm -rf ../cache_old/ — mas você ainda não confirmou se está na pasta certa, nem fez backup de nada. O que f",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie uma pasta de teste com alguns arquivos dentro.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Confirme onde está e o que existe ali, como ritual, antes de qualquer ação.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Faça backup da pasta de teste antes de tocar nela.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Remova a pasta de teste usando o caminho absoluto completo, confirmado pelo pwd do passo 2.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Valide o resultado final e documente o ritual completo.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

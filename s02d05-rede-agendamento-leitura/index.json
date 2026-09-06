@@ -1,0 +1,45 @@
+{
+  "title": "Rede e Agendamento — Só Leitura",
+  "description": "O sênior deixa um bilhete colado na tela: \"lembrete: somente leitura\". Por onde você começa?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Identifique o endereço IP e a interface principal da sua VM.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Identifique a rota padrão (default via).",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Liste as tarefas agendadas do seu usuário e entenda o resultado, mesmo que vazio.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Crie dois arquivos com uma linha diferente entre eles e compare.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente um relatório com IP atual, rota padrão, tarefas agendadas e diferenças de configuração encontradas.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

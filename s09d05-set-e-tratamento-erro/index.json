@@ -1,0 +1,45 @@
+{
+  "title": "set -e: Falhar Alto",
+  "description": "set -e: Falhar Alto",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. escreva um script SEM set -e, com um cd pra uma variável não definida, e observe que ele continua rodando mesmo assim",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. adicione set -e no início e teste de novo.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione uma validação explícita com [ ! -d ] antes do cd, com mensagem de erro clara.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. teste o script com um diretório válido, confirmando que ele continua funcionando normalmente no caminho de sucesso.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente cenário testado sem proteção, com set -e, com validação explícita — fechando a Semana 9.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

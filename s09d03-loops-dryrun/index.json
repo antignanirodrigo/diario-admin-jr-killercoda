@@ -1,0 +1,45 @@
+{
+  "title": "Loops: Dry-Run Antes de Executar",
+  "description": "Loops: Dry-Run Antes de Executar",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. crie 3 arquivos de teste .log, incluindo um com espaço no nome.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. reproduza o bug com for f in $(ls), usando só echo (nunca mv direto).",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. rode o mesmo teste com glob (*.log) e compare o resultado.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. revise a saída do dry-run, remova o echo, e execute o loop de verdade.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente comando de dry-run, revisão feita, comando real, resultado validado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

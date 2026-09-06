@@ -1,0 +1,45 @@
+{
+  "title": "Restaurar de Verdade: Backup Não Testado Não é Backup",
+  "description": "Restaurar de Verdade: Backup Não Testado Não é Backup",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. use o backup que você criou no Dia 4 (ou crie um novo) e simule apagar a pasta de origem original.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. restaure o backup pra um local de TESTE separado, nunca direto no lugar original ainda.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. compare o restaurado com o que você esperava, usando diff e contagem de arquivos.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. só depois de validado, mova o conteúdo do local de teste pro lugar original.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente o restore completo, fechando a Semana 6 e a Fase 1 de storage.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Identidade e Ambiente: quem eu sou, onde estou",
+  "description": "Mesma máquina, mesmo script, resultado diferente. O que muda entre um caso e outro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie um usuário de teste para comparar identidades lado a lado — é vendo a diferença que o conceito de UID/GID gruda.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Rode, em sequência, os quatro comandos de identidade desta aula.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Na saída de id , identifique qual grupo daria a você poder de virar root com sudo .",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Rode cat /etc/os-release e compare com o que uname -a mostrou.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Escreva, numa frase, a diferença entre \"estar no grupo sudo\" e \"estar como root agora\".",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Confirme que nenhum dos quatro comandos exigiu senha ou alterou qualquer coisa no sistema.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "7. Remova o usuário de teste e prove que a máquina voltou ao estado anterior.",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Processo de Boot: Visão Geral",
+  "description": "Antes de pensar em botão liga e aparece login: quais são as etapas reais entre um e outro, e qual delas está demorando?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. rode journalctl -b e identifique as etapas BIOS, GRUB, kernel, initramfs e systemd nos logs.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. rode systemd-analyze e anote o tempo total, dividido entre kernel e userspace.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. rode systemd-analyze blame | head e identifique o serviço mais lento.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. monte um mapa do incidente: etapa → horário → observação, sem alterar nada no sistema.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. confirme que nenhum comando de escrita foi executado durante toda a investigação.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

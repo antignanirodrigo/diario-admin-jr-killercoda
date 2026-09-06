@@ -1,0 +1,60 @@
+{
+  "title": "Primeiro Acesso SSH: observar antes de tocar",
+  "description": "O acesso SSH é seu. O que você faz antes de tocar em qualquer coisa?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Grave a sessão inteira antes de começar — todo levantamento profissional deixa rastro.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Crie uma VM Linux descartável (Ubuntu Server, por exemplo) e, na tela do instalador, marque explicitamente a opção de",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Pelo console local da VM (não pelo SSH ainda — de propósito, você ainda não confia nela), leia a fingerprint que o pr",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Do seu PC, conecte via SSH e compare a fingerprint mostrada com a que você anotou no passo anterior.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Execute, em sequência, os comandos de inventário desta aula.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Monte um registro, num bloco de notas real, com comando, saída importante, interpretação e risco identificado — um it",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "7. Reexecute os mesmos comandos do Passo 4 e confirme que nenhum pacote, arquivo de configuração ou serviço foi alterado",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      },
+      {
+        "title": "8. Encerre a gravação e confira o que ficou registrado — esse arquivo é a sua entrega de hoje.",
+        "text": "step8/text.md",
+        "verify": "step8/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

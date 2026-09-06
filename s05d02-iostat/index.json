@@ -1,0 +1,45 @@
+{
+  "title": "iostat: Disco Lento Não é Disco Cheio",
+  "description": "iostat: Disco Lento Não é Disco Cheio",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Rode iostat em estado normal e anote os valores de referência.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Gere carga de escrita de teste e observe o iostat durante a operação.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Identifique o processo responsável pela carga com pidstat.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Remova o arquivo de teste e confirme o retorno ao normal.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente sintoma, evidência, processo identificado e ação tomada.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

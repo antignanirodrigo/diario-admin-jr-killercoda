@@ -1,0 +1,45 @@
+{
+  "title": "Pipes, tee e Redirecionamento Avançado",
+  "description": "Pipes, tee e Redirecionamento Avançado",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. rode um comando de teste com saída simples usando tee (sem -a) e confirme o arquivo criado.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. rode o mesmo comando de novo, sem -a, e confirme que o conteúdo anterior foi sobrescrito.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. repita o teste agora usando tee -a, confirmando que o conteúdo se acumula.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. monte uma cadeia completa de investigação, combinando erro+saída, filtro e tee.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente comando completo, arquivo gerado, confirmação de que tela e arquivo batem.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

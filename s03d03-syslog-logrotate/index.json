@@ -1,0 +1,45 @@
+{
+  "title": "Syslog Clássico e logrotate",
+  "description": "O reflexo é apagar app.log direto. Isso realmente libera o espaço? O que você confere antes?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie um arquivo de teste e mantenha ele aberto num processo.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Apague o arquivo enquanto o tail ainda está rodando, e confirme que o espaço ainda está preso.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Encerre o processo que prende o arquivo e confirme que o espaço foi liberado.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Simule a rotação de log sem aplicar nada ainda.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente partição afetada, causa do espaço preso, ação tomada, espaço liberado antes/depois.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

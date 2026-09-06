@@ -1,0 +1,50 @@
+{
+  "title": "grep e find: duas ferramentas, dois problemas diferentes",
+  "description": "Rolar tela com less em cada um não é opção. Por onde você começa?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie 3 arquivos de teste com conteúdo diferente, incluindo a palavra ERROR em só um deles.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Busque o texto ERROR na pasta de teste e confirme que só o arquivo certo aparece.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Filtre arquivos por nome e depois por data de modificação.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Combine os dois comandos numa busca só: find filtra os arquivos, grep procura o texto neles.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente comando usado, arquivo(s) encontrado(s), linha(s) e horário — como se fosse fechar o ticket #4821.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Apague os logs de teste que você criou — eles não podem ficar confundindo buscas futuras nesta pasta.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

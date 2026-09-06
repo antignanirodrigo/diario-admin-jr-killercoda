@@ -1,0 +1,45 @@
+{
+  "title": "Condicionais: if e test — Variável Sem Aspas é Risco",
+  "description": "Condicionais: if e test — Variável Sem Aspas é Risco",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. escreva um if usando uma variável SEM aspas, e teste com a variável vazia — reproduza o bug da história.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. corrija adicionando aspas duplas na variável e teste de novo com valor vazio.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione uma guarda com -z no início, testando o caso de variável vazia com mensagem clara.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. teste a diferença entre = e -eq comparando \"18\" com \"018\" nos dois modos.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente script antes/depois da correção, casos testados, comportamento validado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

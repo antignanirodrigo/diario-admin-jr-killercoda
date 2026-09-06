@@ -1,0 +1,45 @@
+{
+  "title": "rsync: Backup de Verdade, Com Cuidado",
+  "description": "rsync: Backup de Verdade, Com Cuidado",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. crie uma pasta de origem com alguns arquivos de teste, e uma pasta de destino vazia.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. rode um dry-run simples, sem --delete ainda, e observe o que seria copiado.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. rode sem -n pra copiar de verdade, depois apague um arquivo da origem (não do destino) — reproduzindo o cenário da hi",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. rode o dry-run com --delete e confirme que ele mostra exatamente o arquivo removido sendo apagado do destino também.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. confirme que a remoção é esperada, rode sem -n pra aplicar de verdade, e documente o resultado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

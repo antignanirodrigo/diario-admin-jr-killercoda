@@ -1,0 +1,50 @@
+{
+  "title": "Gestão de Pacotes: apt/dnf com Critério",
+  "description": "Seu dedo já está digitando apt upgrad . Isso é a mesma coisa que instalar só o htop?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Atualize a lista de pacotes e verifique a versão candidata de uma ferramenta ainda não instalada.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Instale a ferramenta, lendo com atenção a lista antes de confirmar.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Confirme a instalação e a versão exata.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Compare o que um upgrade completo afetaria, sem rodar de verdade.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente pacote pedido, versão instalada, dependências, e confirmação de escopo.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova o pacote instalado no laboratório e confirme que o servidor voltou ao estado anterior à aula.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

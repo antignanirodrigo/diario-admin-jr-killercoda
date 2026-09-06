@@ -1,0 +1,45 @@
+{
+  "title": "vmstat: Memória e Swap Além do top",
+  "description": "vmstat: Memória e Swap Além do top",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Rode vmstat em estado normal e anote os valores de referência.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Gere pressão de memória controlada e observe o vmstat mudar em tempo real.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Compare free baixo (cache normal) com so alto (pressão real).",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Encerre o teste de carga e confirme o retorno ao normal.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente sintoma, ferramenta usada, evidência e validação pós-correção.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

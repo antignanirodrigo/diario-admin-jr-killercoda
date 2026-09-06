@@ -1,0 +1,45 @@
+{
+  "title": "Cron e PATH: Tarefa Agendada Sem Log é Chute",
+  "description": "Cron e PATH: Tarefa Agendada Sem Log é Chute",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. compare o PATH do seu shell interativo com o PATH que o cron realmente usa.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. remova a linha de teste, escreva um script que usa um comando fora do PATH mínimo do cron, e confirme que ele falha q",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione PATH explícito no início do script e teste de novo.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. confirme que o redirecionamento completo captura tudo, inclusive erros, removendo a tarefa de teste ao final.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente PATH do shell vs. PATH do cron, correção aplicada, validação da execução agendada.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

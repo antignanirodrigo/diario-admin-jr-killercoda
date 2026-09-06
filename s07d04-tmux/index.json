@@ -1,0 +1,45 @@
+{
+  "title": "tmux: Sessão Persistente de Verdade",
+  "description": "tmux: Sessão Persistente de Verdade",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. instale o tmux se necessário e crie uma sessão nomeada.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. dentro da sessão, rode um comando de teste com progresso visível e desanexe sem encerrar.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. confirme que a sessão ainda existe, listando todas as sessões ativas.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. reconecte à sessão e confirme que o comando de teste continuou rodando o tempo todo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente nome da sessão, comando testado, comportamento após detach/attach.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

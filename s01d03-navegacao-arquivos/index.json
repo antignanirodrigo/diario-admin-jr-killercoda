@@ -1,0 +1,55 @@
+{
+  "title": "Navegar e Ler o Sistema de Arquivos",
+  "description": "O log tem 400 mil linhas e o erro acontece de novo em minutos. Como você olha?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie um log grande e um que cresce em tempo real — sem os dois, metade dos comandos de hoje não tem o que mostrar.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Confirme onde você está, veja o que existe na pasta, depois navegue até /var/log.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Abra um arquivo de log com less e navegue com as setas, depois saia sem alterar nada.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Compare o início e o final do mesmo arquivo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Acompanhe um arquivo em tempo real e, em outra janela/aba, adicione uma linha nova nele.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Escreva o relato do ticket #3487: caminho do arquivo, horário do erro, mensagem exata.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "7. Encerre o gerador em segundo plano e apague os logs de laboratório.",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

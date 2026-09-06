@@ -1,0 +1,45 @@
+{
+  "title": "last, lastlog, auditd: Quem Entrou, Quando",
+  "description": "É tentador rodar um comando só e responder rápido. Por que isso não é suficiente aqui?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Identifique suas próprias sessões recentes de login.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Compare com o último login por usuário.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Se o auditd estiver disponível, veja eventos detalhados do dia.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Construa uma linha do tempo cruzando as três fontes pra um único usuário de teste.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente o relatório de acesso final, fechando a Semana 3.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

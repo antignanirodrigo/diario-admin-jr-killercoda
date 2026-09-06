@@ -1,0 +1,45 @@
+{
+  "title": "Ambiente de Shell: PATH, Alias, .bashrc",
+  "description": "Ambiente de Shell: PATH, Alias, .bashrc",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. veja o PATH atual e identifique todas as pastas listadas.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. crie um script de teste fora do PATH e reproduza o sintoma do chamado.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione essa pasta ao PATH de forma permanente e aplique sem reiniciar o terminal.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. crie um alias simples e teste depois de aplicar.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente sintoma, diagnóstico, correção aplicada, validação final — fechando a Semana 8.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

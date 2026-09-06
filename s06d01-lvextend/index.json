@@ -1,0 +1,45 @@
+{
+  "title": "lvextend: Expandindo um Disco Sem Desligar Nada",
+  "description": "lvextend: Expandindo um Disco Sem Desligar Nada",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. confirme espaço livre no VG antes de expandir qualquer coisa.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. identifique o tipo de filesystem do LV de teste — ext4 usa resize2fs, xfs usa xfs_growfs.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. rode lvextend no LV de teste e confirme a mudança — mas pare aí, sem rodar o resize ainda, e reproduza o erro clássic",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. complete a expansão rodando o resize correto pro tipo de filesystem identificado, e confirme com df -h.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente tamanho antes, tamanho depois, comandos usados e validação final.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

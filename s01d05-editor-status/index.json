@@ -1,0 +1,55 @@
+{
+  "title": "Editor de Texto e Primeira Leitura de Status",
+  "description": "Não reiniciar é justamente a parte difícil. Como você descobre o que aconteceu?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie um serviço de teste que falha de propósito — sem um serviço quebrado de verdade, systemctl status e journalctl n",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Abra qualquer arquivo de configuração com nano, navegue até o final, e saia sem salvar.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Repita o mesmo processo com vim.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Confira o status de 3 serviços diferentes da sua VM.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Leia os logs específicos de um desses serviços, procurando erro ou aviso.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Feche a Semana 1: escreva um resumo com tudo que você aprendeu a inspecionar sem alterar nada.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "7. Remova o serviço de teste e confirme que o systemd não o conhece mais.",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "title": "kill e Sinais: SIGTERM Não é SIGKILL",
+  "description": "kill e Sinais: SIGTERM Não é SIGKILL",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. inicie um processo de teste simples em background e anote o PID.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. envie SIGTERM pro PID e confirme com ps -p que ele terminou.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. inicie um segundo processo de teste e pratique a escalada completa: -15, esperar, checar, -9 se necessário.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. pesquise o número de pelo menos 3 outros sinais e o que cada um faz.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente PID, sinal enviado em cada etapa, resultado, tempo de espera entre tentativas.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

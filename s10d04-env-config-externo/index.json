@@ -1,0 +1,45 @@
+{
+  "title": "Configuração Externa: Segredo Fora do Script",
+  "description": "Configuração Externa: Segredo Fora do Script",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. reproduza o risco — escreva um script de teste que recebe uma senha fictícia como argumento e imprime \"conectando com",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. crie um arquivo de configuração separado com a credencial fictícia e proteja com chmod 600.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adapte o script de teste pra ler do arquivo de configuração em vez de receber a senha como argumento, e confirme com ",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. simule o cenário de \"senha já commitada\" — confirme que remover do arquivo atual não apaga o histórico do git.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente: risco original, correção aplicada, validação de que a senha não está mais exposta.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

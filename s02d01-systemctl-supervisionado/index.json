@@ -1,0 +1,45 @@
+{
+  "title": "systemctl com Aprovação: sua primeira mudança real",
+  "description": "Seu dedo já está quase no Enter pra rodar o restart. O que vem antes disso?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Pare um serviço de teste na sua VM, simulando a falha do chamado, e confirme.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Escreva uma \"mensagem de aprovação\" fictícia antes de reiniciar.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Execute o restart e confira o status imediatamente depois.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Espere alguns segundos e cheque o status de novo, pra confirmar estabilidade.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente o chamado completo: causa observada, aprovação recebida, restart executado, serviço validado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

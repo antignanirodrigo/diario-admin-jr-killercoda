@@ -1,0 +1,45 @@
+{
+  "title": "ps Avançado e /proc: O Processo Por Dentro",
+  "description": "ps Avançado e /proc: O Processo Por Dentro",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. veja a árvore completa de processos e identifique um que você mesmo iniciou.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. leia o status detalhado desse processo direto do kernel, via /proc.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. compare o PPid mostrado no /proc com o que aparece na árvore do ps --forest, confirmando que batem.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. explore outros arquivos disponíveis dentro de /proc/PID/ sem alterar nada.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente a árvore completa de um processo, fechando a Semana 7.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

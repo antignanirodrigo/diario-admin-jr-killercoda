@@ -1,0 +1,50 @@
+{
+  "title": "journalctl: Log Primeiro, Restart Depois",
+  "description": "Reiniciar de novo pode apagar a pista do motivo real. O que você digita primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Veja os últimos 20 registros de um serviço de teste.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Combine período e prioridade pra cortar ruído, e compare com o comando anterior.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Acompanhe o log ao vivo numa janela e provoque um evento (restart) noutra.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Provoque um conflito de porta conhecido e encontre a causa só pelo journal.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente unidade, filtro usado, mensagem de erro, causa raiz e ação tomada.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Encerre o servidor de teste que ocupou a porta 8080 e confirme que a porta voltou a ficar livre.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

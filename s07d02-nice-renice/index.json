@@ -1,0 +1,45 @@
+{
+  "title": "nice e renice: Prioridade Sem Travar Tudo",
+  "description": "nice e renice: Prioridade Sem Travar Tudo",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. inicie um processo de teste de carga e observe seu uso de CPU.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. aplique renice 19 no PID desse processo e confirme a mudança.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. inicie um segundo processo de teste, dessa vez já com prioridade baixa desde o início.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. encerre os dois processos de teste, aplicando a escalada de sinais do Dia 1.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente PID, prioridade antes, prioridade depois, e impacto observado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

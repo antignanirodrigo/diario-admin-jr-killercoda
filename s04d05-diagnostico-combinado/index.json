@@ -1,0 +1,50 @@
+{
+  "title": "Diagnóstico Combinado: Lento e Estranho ao Mesmo Tempo",
+  "description": "Duas coisas estranhas ao mesmo tempo raramente são coincidência. Qual você investiga primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Simule um incidente combinado: gere carga de CPU e confira acessos ao mesmo tempo.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Monte uma linha do tempo cruzando os dois conjuntos de dados.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Revise todo o toolkit das Semanas 3 e 4, de memória, sem consultar nada.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Escreva um relatório de incidente completo, incluindo critério de escalonamento.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente o fechamento da Semana 4 com autoavaliação honesta.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Encerre o processo de carga sintética que você criou para o exercício, deixando o servidor limpo.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

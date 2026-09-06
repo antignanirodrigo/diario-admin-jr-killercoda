@@ -1,0 +1,45 @@
+{
+  "title": "cut, sort, uniq: Dados em Ordem",
+  "description": "cut, sort, uniq: Dados em Ordem",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. crie um arquivo de teste com algumas linhas repetidas, simulando um log.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. rode só o cut isolado e confirme que a coluna certa está sendo extraída.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione sort e depois uniq -c, um de cada vez, verificando a saída em cada passo.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. complete a cadeia com sort -rn e head, obtendo o ranking final.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente comando completo usado, arquivo analisado, resultado do top.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}
