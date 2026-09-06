@@ -13,6 +13,7 @@ sudo kill $!          # derruba de propósito — reproduz o "site indisponível
 <details>
 <summary>🔍 Detalhar este cenário</summary>
 
+- `-m` — Flag do Python: roda um módulo da biblioteca padrão como se fosse um script — em vez de precisar apontar pro caminho de um arquivo .py.
 - `python3 -m http.server 80 &` — Sobe um servidor HTTP simples embutido no Python, escutando na porta 80, em segundo plano (o & solta o prompt de volta) — só para ter algo real respondendo antes de derrubar de propósito.
 - `$!` — Variável especial do shell: guarda o PID do último processo colocado em segundo plano — é assim que você recupera o identificador do servidor de teste.
 - `sudo kill $!` — Envia o sinal padrão (SIGTERM) ao processo com esse PID, encerrando o servidor de teste de propósito — reproduz o sintoma "site indisponível" do chamado #5842.

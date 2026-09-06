@@ -11,6 +11,7 @@ python3 -m http.server 8080 &
 <details>
 <summary>🔍 Detalhar esse comando</summary>
 
+- `-m` — Flag do Python: roda um módulo da biblioteca padrão como se fosse um script — em vez de precisar apontar pro caminho de um arquivo .py.
 - `python3 -m http.server 8080` — Sobe um servidor HTTP simples de teste, ocupando a porta 8080.
 - `&` — Coloca o comando em segundo plano, liberando o terminal imediatamente.
 </details>

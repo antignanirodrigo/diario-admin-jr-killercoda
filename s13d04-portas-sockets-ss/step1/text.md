@@ -12,6 +12,7 @@ ss -tlnp | grep ':8080'
 <details>
 <summary>🔍 Detalhar esse comando</summary>
 
+- `-m` — Flag do Python: roda um módulo da biblioteca padrão como se fosse um script — em vez de precisar apontar pro caminho de um arquivo .py.
 - `python3 -m http.server 8080 &` — Sobe um servidor HTTP simples na porta 8080, em segundo plano, só para ter um serviço real escutando durante o laboratório.
 - `ss -tlnp | grep ':8080'` — Confirma localmente que a porta 8080 está em LISTEN, com o processo associado — a linha de base antes do teste remoto.
 </details>
