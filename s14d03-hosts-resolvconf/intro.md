@@ -5,3 +5,8 @@
 > "Se o DNS está certo, por que só este PC insiste no IP antigo?"
 
 PC-01 e PC-03 resolvem certo. PC-02, sozinho, insiste em outro IP. O DNS é o culpado aqui?
+
+
+---
+
+👉 **Como funciona:** clique em **START**, logo abaixo, para abrir um terminal Linux real à direita. Depois, siga os passos um por um — cada um mostra o comando exato pra digitar e um botão **CHECK** pra confirmar que deu certo antes de avançar.
