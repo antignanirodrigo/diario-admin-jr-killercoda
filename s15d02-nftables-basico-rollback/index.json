@@ -1,0 +1,45 @@
+{
+  "title": "nftables: Listar, Backup, Rollback",
+  "description": "Só uma regra... mas o que já existe neste firewall? Você sabe o ruleset atual de cor?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. salve o ruleset atual num arquivo de backup com data no nome.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. adicione uma regra pequena de teste e valide.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. rode o rollback de verdade e confirme que a regra sumiu.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. reaplique a mudança de teste e confirme de novo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente o que foi feito, como foi testado e o rollback provado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

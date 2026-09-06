@@ -1,0 +1,50 @@
+{
+  "title": "Investigação: o Pacote Chega?",
+  "description": "Sem opinião, só evidência. Como você resolve essa disputa?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Prepare duas VMs de laboratório (cliente e servidor) com um serviço simples ativo numa porta conhecida.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Inicie captura simultânea nas duas VMs, filtrando por host e porta relevantes, salvando em arquivo.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Gere tráfego de teste do cliente pro servidor (curl ou similar) enquanto as duas capturas rodam.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Bloqueie temporariamente a porta no servidor (com um firewall simples de teste) e repita a captura dupla.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente a conclusão de cada cenário testado, citando exatamente qual evidência sustenta cada conclusão.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova a regra de firewall de teste no servidor e confirme que a porta voltou a responder normalmente.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

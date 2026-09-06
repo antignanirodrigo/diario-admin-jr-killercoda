@@ -1,0 +1,50 @@
+{
+  "title": "NFS no fstab: _netdev e nofail",
+  "description": "O fstab tentou montar rede antes da rede estar pronta. O que falta na linha?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Prepare o export do lado servidor antes do laboratório — hoje o risco é especificamente sobre a linha do /etc/fstab, ",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Adicione uma linha NFS no fstab de uma VM cliente de laboratório, com _netdev,nofail.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Pare o serviço NFS na VM servidor, e reinicie a VM cliente.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Depois do boot, confirme com mount ou df -h se a montagem NFS realmente aconteceu.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Suba o serviço NFS de novo no servidor, e rode mount -a manualmente no cliente.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Restaure o /etc/fstab ao estado original e remova o export e os diretórios de teste.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

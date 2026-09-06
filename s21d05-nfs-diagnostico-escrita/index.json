@@ -1,0 +1,50 @@
+{
+  "title": "Diagnóstico: Escrita Falha no NFS",
+  "description": "A resposta certa não é adivinhar. Qual camada você testa primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Prepare o pacote e o usuário de teste — o ponto da aula é a permissão Unix do DIRETÓRIO, que você mesmo vai criar e q",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM servidor de laboratório, crie um diretório de export com dono root e permissão 755 (sem escrita pra outros).",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Do cliente, monte o export e tente criar um arquivo como um usuário comum (não root).",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. No servidor, corrija a permissão do diretório com chown pro usuário/grupo correto.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Teste como root no cliente também, e compare o resultado com o teste do usuário comum.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Desmonte, remova export, usuário e diretórios de teste — fecha a Semana 21 sem deixar rastro na VM.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

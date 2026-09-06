@@ -1,0 +1,50 @@
+{
+  "title": "NFS: o Conceito",
+  "description": "A resposta clássica do mundo Linux é NFS. Por onde você começa?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Antes do primeiro passo do laboratório, monte o par servidor+cliente na mesma VM: instale os pacotes, crie o diretóri",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM servidor de laboratório, confirme um export existente (ou peça ajuda pra criar um básico) com exportfs -v.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Numa VM cliente, rode showmount -e apontando pro IP do servidor.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Monte o diretório remoto e crie um arquivo de teste.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Se tiver uma segunda VM cliente disponível, monte o mesmo export nela e confirme que o arquivo já aparece lá.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Desmonte, remova o export e apague o diretório de teste — devolve a VM ao estado anterior à aula.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

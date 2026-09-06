@@ -1,0 +1,50 @@
+{
+  "title": "Processo e Rede Juntos",
+  "description": "Reiniciar não resolveu nada. O que você confirma antes de tentar de novo?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie um cenário real de \"processo rodando, porta errada\" — sem isso os comandos de hoje não têm nada de anormal pra m",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, configure um serviço simples pra escutar numa porta errada de propósito, e confirme com syste",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Confirme com ss -tlnp que a porta esperada não tem nada escutando.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Corrija a porta na configuração, reaplique, e confirme com ss -tlnp que agora está escutando.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Teste conectividade de outra VM com nc -zv, confirmando o fluxo completo funcionando.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Pare e remova o serviço de teste — nada de unit de teste esquecida no systemd, chamada por engano às 3 da manhã meses",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

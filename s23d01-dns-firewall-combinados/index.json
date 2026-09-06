@@ -1,0 +1,50 @@
+{
+  "title": "DNS ou Firewall? Diagnóstico Combinado",
+  "description": "Dois times esperam a resposta. Qual dos dois você aciona — com evidência, não achismo?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Confirme o estado saudável de DNS e conectividade ANTES de simular qualquer bloqueio — essa é a sua baseline pra prov",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, rode dig contra um nome que resolve corretamente, e confirme o IP retornado.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Bloqueie a porta de destino com uma regra nftables temporária (Semana 15), e teste nc -zv direto no IP.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Remova a regra de firewall, e confirme que nc -zv volta a funcionar.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Documente os dois testes separadamente (DNS e conectividade), como se fosse fechar o chamado #2301.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova a regra de bloqueio que você criou e prove que os dois testes voltam a passar exatamente como na baseline do i",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

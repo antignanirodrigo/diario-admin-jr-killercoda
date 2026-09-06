@@ -1,0 +1,40 @@
+{
+  "title": "Samba: o Conceito",
+  "description": "O problema não é configuração errada. O que muda quando o cliente é Windows?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Instale o Samba na VM de laboratório e confirme que os dois serviços essenciais (smbd e nmbd) subiram, além da porta ",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, instale o pacote samba e confirme os serviços smbd e nmbd ativos.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Confirme com ss -tlnp que a porta 445 está escutando.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Se tiver uma VM ou máquina Windows disponível, tente acessar \\\\ip-do-servidor\\ no Explorador de Arquivos.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

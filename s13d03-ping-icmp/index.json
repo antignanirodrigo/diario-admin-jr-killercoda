@@ -1,0 +1,45 @@
+{
+  "title": "Ping e ICMP",
+  "description": "Você roda ping, recebe resposta, e já quer marcar \"motivo anotado: ping OK\". Isso fecha o caso?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. confirme a camada de rede com ping.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. pare um serviço web (se houver) e teste a porta específica.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. investigue localmente no servidor e compare com o resultado do nc.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. reinicie o serviço web e repita os três testes em sequência.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente os três resultados lado a lado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

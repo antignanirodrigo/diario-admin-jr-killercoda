@@ -1,0 +1,45 @@
+{
+  "title": "Samba: Permissões Combinadas",
+  "description": "read only já está certo. O que mais controla se um arquivo pode ser lido depois de criado?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Sem create mask definido, crie um arquivo através do Samba e confirme a permissão restritiva. Depois adicione create ",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, crie um arquivo via smbclient sem create mask definido, e confirme a permissão restritiva com",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Adicione create mask = 0664 e directory mask = 0775 no bloco do compartilhamento, e reaplique.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Crie um arquivo novo via smbclient depois da mudança, e confirme a nova permissão com ls -l.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Confirme que o arquivo criado ANTES da mudança continua com a permissão antiga, exigindo chmod manual.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

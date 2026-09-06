@@ -1,0 +1,40 @@
+{
+  "title": "tcpdump: Primeira Captura",
+  "description": "O plantão é seu. O que você digita primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Rode ip a numa VM de laboratório e identifique o nome da interface principal.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Rode tcpdump -i <interface> sem sudo e observe o erro de permissão.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Rode o mesmo comando com sudo e com -n (sem resolver nomes), e em outro terminal gere tráfego (ping, curl, ou navegaç",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Interrompa a captura com Ctrl+C e leia o resumo final de pacotes.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

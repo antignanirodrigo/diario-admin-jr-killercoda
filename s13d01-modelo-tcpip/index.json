@@ -1,0 +1,55 @@
+{
+  "title": "Modelo TCP/IP",
+  "description": "O reflexo de \"reiniciar tudo\" ignora uma pergunta essencial. Em qual das cinco camadas da rede o problema realmente está?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Derrube de propósito o serviço web da VM antes de começar o diagnóstico — sem um sintoma real, andar pelas quatro cam",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. confirme a camada de enlace na VM de laboratório.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. confirme a camada de rede na mesma interface.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. confirme a camada de transporte listando portas escutando.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. instale (ou simule) um serviço web simples e confirme a camada de aplicação.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. documente, camada por camada, o que cada comando confirmou.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "7. Suba o serviço de novo e confirme que as quatro camadas voltaram a responder — sem isso, a VM fica com a porta 80 mor",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Traceroute e MTR",
+  "description": "Suspeita vaga. Sem medir salto a salto, \"deve ser a internet\" é só achismo — como você transforma isso em evidência?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. rode mtr em modo relatório contra um destino externo conhecido.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. identifique se algum salto específico destoa dos vizinhos.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. compare o salto suspeito com os saltos seguintes.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. monte um relatório de escalação completo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. confirme que nenhum serviço foi reiniciado durante todo o diagnóstico.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

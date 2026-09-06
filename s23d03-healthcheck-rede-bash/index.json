@@ -1,0 +1,50 @@
+{
+  "title": "Healthcheck de Rede em Bash",
+  "description": "Um script assim já existe pronto? Não. Por onde você começa a escrever?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie o arquivo healthcheck.sh de verdade na sua VM — sem o arquivo existir com permissão de execução, nem o script ma",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, escreva o script healthcheck.sh com as quatro funções, testando um alvo que funciona.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Force uma falha deliberada em dois testes ao mesmo tempo (ex.: nome inexistente + porta bloqueada), e rode o script.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Confirme o código de saída do script com echo $? logo depois de rodar, nos dois cenários (tudo ok / com falha).",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Adicione o script a uma entrada de cron de teste, e confirme execução automática registrada em log.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova o script de teste e a entrada de cron que você criou, deixando a VM como estava antes da aula.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

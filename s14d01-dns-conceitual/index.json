@@ -1,0 +1,50 @@
+{
+  "title": "DNS Conceitual",
+  "description": "Três perguntas legítimas de quem nunca viu o fluxo real. DNS é mesmo um arquivo único?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. consulte um domínio conhecido e leia a ANSWER SECTION completa.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. configure um servidor DNS local simples com uma zona de teste, se disponível.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione um CNAME apontando para o registro A e teste com dig.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. compare o campo SERVER entre uma consulta ao resolvedor local e uma direta ao autoritativo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente o fluxo completo observado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova a zona de teste do dnsmasq criada no laboratório de hoje, pra não deixar um servidor DNS de brinquedo responde",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "NFS: Exports e Permissões",
+  "description": "O problema está no /etc/exports. O que você corrige primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Prepare o pacote e o diretório de teste, e confirme o serviço NFS de pé — os passos seguintes são sobre ESCREVER e te",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Edite /etc/exports numa VM servidor de laboratório, restringindo o acesso a um único IP de cliente específico, com rw",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Tente montar de uma segunda VM, fora da lista autorizada, e observe o erro.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Mude a opção de rw pra ro no export, reaplique com exportfs -ra, e tente escrever um arquivo do cliente autorizado.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Deliberadamente insira um espaço extra antes do parêntese numa linha de teste, reaplique, e observe o efeito.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova o export e o diretório de teste, e confirme que a máquina não ficou com nenhuma linha de exports de laboratóri",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

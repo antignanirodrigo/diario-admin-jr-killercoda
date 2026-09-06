@@ -1,0 +1,45 @@
+{
+  "title": "/etc/hosts: o Atalho que Engana o DNS",
+  "description": "PC-01 e PC-03 resolvem certo. PC-02, sozinho, insiste em outro IP. O DNS é o culpado aqui?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. adicione uma entrada errada em /etc/hosts para um nome que também existe no DNS.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. compare getent hosts com dig para o mesmo nome.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. confirme a ordem de resolução configurada.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. faça backup, remova a entrada de teste e valide com getent hosts.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente a causa raiz correta.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

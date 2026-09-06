@@ -1,0 +1,45 @@
+{
+  "title": "DNS: TTL e Cache",
+  "description": "A mudança que você fez no autoritativo falhou, ou existe outra explicação?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. consulte um registro e anote o valor de TTL retornado.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. altere o registro no autoritativo e consulte de novo via resolvedor normal, antes do TTL expirar.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. consulte o autoritativo direto e compare com a consulta normal.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. rode um flush de cache controlado e consulte de novo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente o incidente completo.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Salvando Captura em Arquivo",
+  "description": "Você não pode ficar acordado a noite toda. Qual é o plano?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Rode tcpdump -i eth0 -w teste.pcap enquanto gera algum tráfego (curl, ping).",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Interrompa a captura e reabra o arquivo com tcpdump -r teste.pcap.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Reaplique um filtro host ou port sobre o arquivo já salvo, com tcpdump -r teste.pcap host <ip>.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Tente abrir o mesmo arquivo com cat teste.pcap e observe o conteúdo ilegível.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Remova o arquivo de captura de teste e confirme que não sobrou nada na VM.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

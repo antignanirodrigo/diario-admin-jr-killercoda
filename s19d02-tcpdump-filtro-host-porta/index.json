@@ -1,0 +1,40 @@
+{
+  "title": "tcpdump: Filtro por Host e Porta",
+  "description": "Antes de tentar de novo, o que muda dessa vez?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Numa VM de laboratório, rode tcpdump -i eth0 sem filtro por alguns segundos e observe o volume de linhas.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Rode de novo com host <ip de outra VM> e gere tráfego só com ela.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Combine host e port com and, testando contra uma porta específica de serviço ativo na VM.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Teste dst host e src host separadamente, e compare a diferença de resultado.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

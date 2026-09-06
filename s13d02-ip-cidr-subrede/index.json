@@ -1,0 +1,50 @@
+{
+  "title": "IP e CIDR",
+  "description": "Essa suposição é a armadilha central de hoje. Os dois IPs realmente estão na mesma rede?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. configure IPs na mesma sub-rede em duas VMs de laboratório.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. calcule manualmente o endereço de rede de cada IP usando a máscara /24.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. rode ping entre as duas VMs pra confirmar na prática.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. reconfigure uma VM para uma sub-rede diferente e recalcule.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente a conclusão comparando os dois casos testados.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova os IPs temporários adicionados nas duas VMs — ip addr add não é persistente, mas some só no reboot; sem remove",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

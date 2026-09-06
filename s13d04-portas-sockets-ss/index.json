@@ -1,0 +1,45 @@
+{
+  "title": "Portas e Sockets",
+  "description": "Reflexo perigoso. Antes de tocar em qualquer configuração de segurança: refused e timeout já contam histórias diferentes, sem precisar mudar nada. Voc",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. inicie um serviço simples numa porta e confirme localmente.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. de outra VM, teste a porta correta e uma porta sem serviço.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. adicione uma regra de firewall com policy drop, sem accept pra porta do serviço.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. adicione a regra específica de accept e confirme que o teste remoto volta a funcionar.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente o diagnóstico completo.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

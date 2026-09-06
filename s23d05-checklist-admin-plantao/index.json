@@ -1,0 +1,50 @@
+{
+  "title": "Checklist do Admin de Plantão",
+  "description": "O relógio marca 3h da manhã. Por onde você começa, sem decorar nada de cabeça?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Reproduza o incidente exato do exemplo de hoje — processo zumbi preso numa porta — pra treinar o checklist completo d",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Simule um cenário de incidente numa VM de laboratório (ex.: processo antigo preso numa porta, como no exemplo da aula",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Siga o checklist completo (processo → escuta → logs), documentando cada passo com timestamp, como no exemplo.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Corrija a causa raiz encontrada, e valide com os mesmos comandos que revelaram o problema.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Escreva o relatório final seguindo o formato: causa raiz, ação tomada, validação.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Encerre o processo zumbi e confirme que o app-x real assume a porta corretamente — a validação final do seu relatório",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

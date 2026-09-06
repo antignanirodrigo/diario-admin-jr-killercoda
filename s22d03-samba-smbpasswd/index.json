@@ -1,0 +1,50 @@
+{
+  "title": "Samba: smbpasswd",
+  "description": "O usuário já existe no Linux. Onde mais ele precisa existir?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie um usuário Linux de teste isolado e tente cadastrar a credencial Samba dele ANTES e DEPOIS de ele existir no sis",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, tente smbpasswd -a pra um usuário que ainda não existe no Linux, e observe o erro.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Crie o usuário Linux com useradd, e só então rode smbpasswd -a pra ele.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Confirme o cadastro com pdbedit -L, e teste a autenticação com smbclient.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Defina uma senha Samba diferente da senha Linux do mesmo usuário, e confirme que os dois logins continuam funcionando",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Remova a credencial Samba e o usuário Linux de teste, e prove que os dois sumiram.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Correção Retroativa de Arquivos",
+  "description": "create mask não é retroativo. Como você corrige o que já existe, sem quebrar a navegação das pastas?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Crie uma árvore de teste com arquivos e pastas em permissões restritivas — o mesmo cenário do time reclamando de arqu",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, crie uma árvore de teste com arquivos e subpastas com permissões variadas (misturando 600, 70",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Rode chmod -R 664 deliberadamente na árvore de teste, e confirme que a navegação quebra.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Corrija com os dois comandos find separados (-type f e -type d), e confirme a navegação restaurada.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Rode find com -not -perm pra confirmar que zero arquivos/pastas ficaram fora do padrão esperado.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Aplique a correção com find + chmod separando arquivos e pastas, confirme o resultado e apague a árvore de teste inte",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

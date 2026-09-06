@@ -1,0 +1,40 @@
+{
+  "title": "Lendo o Handshake TCP",
+  "description": "Antes de suspeitar da aplicação, o que você confirma primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Capture tráfego enquanto conecta com sucesso a um serviço ativo (ex.: curl pra um servidor web na VM).",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Tente conectar numa porta fechada da mesma VM e capture o resultado.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Compare visualmente as duas capturas lado a lado: handshake completo vs. handshake travado.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Documente, em uma frase, em qual etapa cada captura travou (ou não travou).",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Serviço ou Firewall?",
+  "description": "O dashboard local mostra app-test rodando. Desligar o firewall pra testar apagaria justamente a evidência de qual das duas causas é a real. Existe um ",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. inicie um serviço simples numa porta e confirme que está escutando.",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. aplique um firewall com policy drop sem regra pra essa porta e teste o acesso remoto.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. sem desligar o firewall, confirme a ausência da regra específica.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. adicione a regra específica e teste de novo.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. documente serviço confirmado, causa isolada, correção aplicada.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

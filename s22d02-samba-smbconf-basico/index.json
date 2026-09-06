@@ -1,0 +1,45 @@
+{
+  "title": "Samba: smb.conf Básico",
+  "description": "Antes de suspeitar de rede ou firewall: o arquivo está com sintaxe válida, e o serviço foi recarregado depois da edição?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Acrescente um compartilhamento de teste ao smb.conf, valide a sintaxe, recarregue o serviço e confirme que ele aparec",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Numa VM de laboratório, edite smb.conf adicionando um compartilhamento de teste com path, valid users e read only.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Rode testparm e confirme \"Loaded services file OK\".",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Reaplique com systemctl reload smbd, e confirme com smbclient -L localhost.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Deliberadamente quebre a sintaxe (remova um colchete) e rode testparm de novo.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}

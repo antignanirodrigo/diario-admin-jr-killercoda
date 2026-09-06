@@ -1,0 +1,7 @@
+## 🎫 #2101 · PRIORIDADE MÉDIA · 09:20 · aberto por: coordenação de aplicações
+
+**host: srv-app-01, srv-app-02, srv-app-03 · serviço: upload de arquivos**
+
+> "Preciso que três servidores de aplicação compartilhem os mesmos arquivos de upload, sem copiar manualmente entre eles toda hora."
+
+A resposta clássica do mundo Linux é NFS. Por onde você começa?

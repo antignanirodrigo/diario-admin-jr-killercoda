@@ -1,0 +1,50 @@
+{
+  "title": "UID e GID entre Máquinas",
+  "description": "Isso não é bug. O que você confirma primeiro?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. Sem duas VMs disponíveis, reproduza o EFEITO do descompasso de UID diretamente: atribua a um arquivo um UID que não e",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Confirme o UID de um usuário de teste em duas VMs de laboratório com id.",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Crie um arquivo do cliente num diretório NFS montado, e observe o dono exibido no servidor.",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Alinhe o UID do usuário de teste no cliente com usermod -u, confirmando que não colide com ninguém.",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Crie um novo arquivo e confirme que o dono agora aparece correto nas duas máquinas.",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Apague o arquivo e o diretório de teste, devolvendo a VM ao estado anterior.",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}
